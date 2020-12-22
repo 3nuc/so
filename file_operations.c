@@ -68,6 +68,9 @@ void set_morse_dash(int dot_duration) {
 }
 
 static void morse_release(struct inode *inode, struct file *file) {
+  int minor = MINOR(inode->i_rdev)-1;
+  devices[minor].dot_duration = 500;
+  devices[minor].minor = minor;
   return;
 }
 
