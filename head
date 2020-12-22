@@ -1,0 +1,1 @@
+gcc -I/usr/include -c file_operations.c  # -E 1>loge && less loge

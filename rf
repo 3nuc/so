@@ -1,0 +1,2 @@
+make && rmmod file_operations;
+insmod /home/file_operations.o && echo LOONG > /dev/m1
